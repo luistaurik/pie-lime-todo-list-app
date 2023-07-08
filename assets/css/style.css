@@ -1,0 +1,238 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6vh 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400px;
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.main {
+    width: 80VW;
+    background-color: #f9fbe7;
+    padding: 2%;
+    border: 1px solid #dce775;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    text-align: center;
+}
+
+.drivers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1;
+}
+
+.driver {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: solid #80deea 1px;
+    border-radius: 10px;
+    padding: 0 36px;
+    margin: 5px;
+    transition: 130ms ease-in-out;
+    height: 110px;
+}
+
+.driver:hover {
+    box-shadow: 2px 2px 11px -1px rgba(51,105,30,0.45);
+    -webkit-box-shadow: 2px 2px 11px -1px rgba(51,105,30,0.45);
+    -moz-box-shadow: 2px 2px 11px -1px rgba(51,105,30,0.45);
+}
+
+.green {
+    background-color: #e6ee9c;
+}
+
+.yellow {
+    background-color: #fff9c4;
+}
+
+.driver-tittle {
+    margin-bottom: 10px;
+}
+
+.driver-result {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.create-div {
+    height: 50px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-input {
+    height: 90%;
+    width: 40vw;
+    background-color: white;
+    border: solid 1px #9e9d24;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    transition: 150ms ease-in-out;
+}
+
+.create-input:hover {
+    box-shadow: 2px 2px 11px -1px rgba(51,105,30,0.45);
+    -webkit-box-shadow: 2px 2px 11px -1px rgba(51,105,30,0.45);
+    -moz-box-shadow: 2px 2px 11px -1px rgba(51,105,30,0.45);
+}
+
+.create-trigger {
+    height: 98%;
+    width: 14vw;
+    border: 2px solid #9e9d24;
+    background-color: #9e9d24;
+    margin: 0;
+    border-radius: 0 10px 10px 0;
+    padding: 0 10px;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: white;
+    transition: 150ms ease-in-out;
+}
+
+.create-trigger:hover {
+    box-shadow: 2px 2px 11px -1px rgba(51,105,30,0.45);
+    -webkit-box-shadow: 2px 2px 11px -1px rgba(51,105,30,0.45);
+    -moz-box-shadow: 2px 2px 11px -1px rgba(51,105,30,0.45);
+}
+
+.tasks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55vw;
+}
+
+.tasks ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.tasks li {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.task-style{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 8fr 1fr;
+    align-items: center;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #9e9d24;
+    border-radius: 10px;
+    width: 54vw;
+    margin: 6px 0;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #004d40;
+    transition: 150ms ease-in-out;
+}
+
+
+.task-style:hover {
+    box-shadow: 2px 2px 11px -1px rgba(51,105,30,0.45);
+    -webkit-box-shadow: 2px 2px 11px -1px rgba(51,105,30,0.45);
+    -moz-box-shadow: 2px 2px 11px -1px rgba(51,105,30,0.45);
+}
+
+.checkbox {
+    width: 22px;
+    height: 22px;
+    margin:6px 12px;
+    border: 4px solid #9e9d24; 
+}
+
+.checkbox-input:checked {
+    background-color: #9e9d24;
+}
+
+.task-id {
+    margin: 15px;
+    font-size: 14px;
+}
+
+.task-text {
+    font-weight: 700;
+    text-decoration: none;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.completed-task {
+    text-decoration: line-through;
+}
+
+
+.delete {
+    color: #004d40;
+    transition: 120ms ease-in-out;
+}
+
+.delete:hover {
+    transform: scale(1.05);
+}
+
+.swal-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.swal-button--confirm {
+    background-color: #9e9d24;
+}
+
+.swal-title,
+.swal-text,
+.swal-button {
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}

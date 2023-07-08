@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/4652/4652041.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Pie Lime | Todo list for lemon lovers</title>
+</head>
+
+<body>
+    <div class="main">
+        <div id="todoHead">
+            <div class="tittle-app">
+                <div class="text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/128/4652/4652041.png">
+                    <h1>PieLime</h1>
+                    <h3>Make your tasks a pipeline... easy</h3>
+                </div>
+            </div>
+        <div id="todoInoputs">
+            <div class="create-div">
+                <input type="text" class="create-input" value="" placeholder="Create a task" id="task-input">
+                <button class="create-trigger" type="button" id="add-task">Add Task</button>
+            </div>
+        </div>
+
+        <div class="tasks" id="tasks-bucket">
+            <ul id="tasks-list">
+            </ul>
+        </div>
+    </div>
+            <div class="drivers row text-center mt-1">
+                <div class="driver"> 
+                    <h4 class="driver-result" id="total-driver"></h4>
+                    <h5 class="driver-tittle">Total</h5>
+                </div>
+                <div class="driver yellow">
+                    <h4 class="driver-result" id="pending-driver"></h4>
+                    <h5 class="driver-tittle">Pending</h5>
+                </div>
+                <div class="driver green">
+                    <h4 class="driver-result" id="done-driver"></h4>
+                    <h5 class="driver-tittle">Done</h5>
+                </div>
+            </div>
+        </div>
+    <script src="assets/js/functions.js" defer></script>
+    <script src="https://kit.fontawesome.com/6038ba0d74.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
